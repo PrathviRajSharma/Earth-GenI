@@ -13,5 +13,5 @@ def generate_image(prompt):
 # Create the Gradio interface
 interface = gr.Interface(fn=generate_image, inputs="text", outputs="image")
 
-# Launch the Gradio app with Flask
-interface.launch(server_name="0.0.0.0", server_port=8080, share=True)
+# Launch the Gradio app with Flask, specifying the port and host
+interface.launch(server_name="0.0.0.0", server_port=10000, share=True)  # Port 10000
